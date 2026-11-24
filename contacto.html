@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | SIAL SOLUTIONS</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo/logo-sial.png" alt="Logo SIAL SOLUTIONS" class="brand-logo" />
+        <span class="brand-name">SIAL SOLUTIONS</span>
+      </a>
+
+      <button
+        type="button"
+        id="menuToggle"
+        class="menu-toggle"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+      <nav id="navMenu" class="nav-menu" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="proyectos.html" class="nav-link">Proyectos</a>
+        <a href="emergencias.html" class="nav-link nav-link--emergency">Emergencias</a>
+        <a href="contacto.html" class="nav-link active">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container">
+        <h1>Contacto y Cotizaciones</h1>
+        <p>
+          Comunícate con SIAL SOLUTIONS por correo formal, WhatsApp o redes sociales, y ubica
+          nuestra zona de cobertura en el mapa.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <!-- FORMULARIO DE COTIZACIÓN -->
+        <div class="contact-card">
+          <h2>Solicita una Cotización</h2>
+          <p class="contact-subtitle">
+            Completa los datos del servicio y elige si deseas enviarlo por WhatsApp o abrir tu
+            correo formal.
+          </p>
+
+          <form id="quoteForm" class="quote-form">
+            <div class="form-group">
+              <label for="clientName">Nombre o Empresa</label>
+              <input
+                type="text"
+                id="clientName"
+                name="clientName"
+                placeholder="Ej. Constructora Andina / Juan Pérez"
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="clientPhone">Teléfono / WhatsApp</label>
+                <input
+                  type="tel"
+                  id="clientPhone"
+                  name="clientPhone"
+                  placeholder="Ej. 999 888 777"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="serviceSelect">Servicio Requerido</label>
+                <select id="serviceSelect" name="serviceSelect">
+                  <option value="Pintura">Pintura</option>
+                  <option value="Drywall">Drywall</option>
+                  <option value="Impermeabilizado">Impermeabilizado</option>
+                  <option value="Gasfitería">Gasfitería</option>
+                  <option value="Desatoro">Desatoro</option>
+                  <option value="Sanitarios">Sanitarios</option>
+                  <option value="Instalación y Renovación de Troncales de Desagüe">
+                    Instalación y Renovación de Troncales de Desagüe
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="clientMessage">Detalles del proyecto o requerimiento</label>
+              <textarea
+                id="clientMessage"
+                name="clientMessage"
+                rows="4"
+                placeholder="Indica el distrito, metraje aproximado o problema a resolver..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" id="sendWhatsappBtn" class="btn btn-primary">
+                Enviar por WhatsApp
+              </button>
+              <button type="submit" id="sendEmailBtn" class="btn btn-secondary">
+                Enviar por Correo
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- CANALES FORMALES Y REDES -->
+        <div class="contact-info-stack">
+          <div class="contact-card">
+            <h2>Canales Directos</h2>
+            <ul class="info-list">
+              <li>
+                <strong>WhatsApp Empresarial:</strong>
+                <a href="#" data-wa-message="Hola SIAL SOLUTIONS, deseo cotizar un servicio.">
+                  +51 902 874 616
+                </a>
+              </li>
+              <li>
+                <strong>Correo Corporativo (prueba):</strong>
+                <a href="mailto:contacto@sialsolutions.pe">contacto@sialsolutions.pe</a>
+              </li>
+              <li>
+                <strong>Dirección:</strong> Av. Principal 123, Lima, Perú (actualizar dirección)
+              </li>
+              <li>
+                <strong>Horario:</strong> Lunes a Sábado de 8:00 a.m. a 6:00 p.m.
+              </li>
+            </ul>
+
+            <h3 class="socials-heading">Redes Sociales</h3>
+            <div class="social-links">
+              <a href="#" class="social-btn" data-social="facebook">Facebook</a>
+              <a href="#" class="social-btn" data-social="tiktok">TikTok</a>
+              <a href="#" class="social-btn" data-social="instagram">Instagram</a>
+            </div>
+          </div>
+
+          <div class="contact-card map-card">
+            <h2>Ubicación en Google Maps</h2>
+            <p class="contact-subtitle">
+              Referencia de ubicación (puedes cambiar la URL del iframe por la dirección exacta de
+              SIAL SOLUTIONS).
+            </p>
+            <div class="map-wrapper">
+              <iframe
+                title="Mapa de ubicación SIAL SOLUTIONS"
+                src="https://www.google.com/maps?q=Lima,Peru&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand">
+          <img src="img/logo/logo-sial.png" alt="Logo SIAL SOLUTIONS" class="brand-logo" />
+          <span class="brand-name">SIAL SOLUTIONS</span>
+        </a>
+        <p class="footer-desc">
+          Comprometidos con soluciones técnicas confiables, limpias y duraderas en cada proyecto.
+        </p>
+        <div class="social-links">
+          <a href="#" class="social-btn" data-social="facebook">Facebook</a>
+          <a href="#" class="social-btn" data-social="tiktok">TikTok</a>
+          <a href="#" class="social-btn" data-social="instagram">Instagram</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navegación</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="emergencias.html">Emergencias</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Especialidades</h3>
+        <ul class="footer-links">
+          <li><a href="servicios.html">Pintura y Drywall</a></li>
+          <li><a href="servicios.html">Impermeabilizado</a></li>
+          <li><a href="servicios.html">Gasfitería y Sanitarios</a></li>
+          <li><a href="servicios.html">Desatoro</a></li>
+          <li><a href="servicios.html">Troncales de Desagüe</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul class="footer-contact">
+          <li><strong>Dirección:</strong> Av. Principal 123, Lima, Perú (por actualizar)</li>
+          <li>
+            <strong>WhatsApp:</strong>
+            <a href="#" data-wa-message="Hola SIAL SOLUTIONS, deseo cotizar un servicio.">
+              +51 902 874 616
+            </a>
+          </li>
+          <li>
+            <strong>Correo:</strong>
+            <a href="mailto:contacto@sialsolutions.pe">contacto@sialsolutions.pe</a>
+          </li>
+          <li><strong>Horario:</strong> Lun - Sáb: 8:00 a.m. - 6:00 p.m.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        &copy; 2026 SIAL SOLUTIONS. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a
+    href="#"
+    class="whatsapp-float"
+    aria-label="Contáctenos por WhatsApp"
+    data-wa-message="Hola SIAL SOLUTIONS, deseo cotizar un servicio."
+  >
+    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.52 3.48A11.82 11.82 0 0 0 12.07 0C5.49 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.29-1.65a11.88 11.88 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.41zm-8.45 18.33h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.73.98 1-3.64-.24-.37a9.85 9.85 0 0 1-1.51-5.25c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.89-9.9 9.89zm5.43-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.41.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+    </svg>
+    <span>Contáctenos</span>
+  </a>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>
